@@ -169,7 +169,7 @@ void client() {
     }
 
     while ((bytes_read = read(fifo_fd, buffer, sizeof(buffer))) > 0) {
-        write(STDOUT_FILENO, buffer, bytes_read);
+        write(STDOUT_FILENO, buffer, bytes_read); 
     }
 
     close(fifo_fd);
